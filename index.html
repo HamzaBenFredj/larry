@@ -2,6 +2,10 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Larry</title>
 <style>body{font:16px/1.6 -apple-system,Segoe UI,Roboto,sans-serif;max-width:640px;margin:40px auto;padding:0 16px;color:#111827;background:#fff}h1{font-size:24px}a{color:#0f766e}</style>
+<script>
+// TikTok sends the sign-in reply here; hand it to the Larry helper running on the operator's own computer.
+(function(){var p=new URLSearchParams(location.search);if(p.has("code")||p.has("error")){location.replace("http://127.0.0.1:8765/callback"+location.search);}})();
+</script>
 </head><body>
 <h1>Larry</h1>
 <p>Larry is a small tool that prepares slideshow drafts for our own TikTok accounts: dailywalletfix and the channels for our iPhone apps ShiftPayday and Glovebox. It uploads finished slides to the TikTok inbox as drafts. A person then adds a sound and decides whether to post.</p>
